@@ -23,13 +23,16 @@ class PersonListTableViewController: UITableViewController {
 //        return 2
 //    }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection
+                            section: Int) -> Int {
         
         return 20
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let personCell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
+    -> UITableViewCell {
+        let personCell = tableView.dequeueReusableCell(withIdentifier: "personCell",
+                                                       for: indexPath)
        var content = personCell.defaultContentConfiguration()
         //content.text = personList.shuffled()
         personCell.contentConfiguration = content

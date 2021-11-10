@@ -17,27 +17,29 @@ class FullPersonTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//       
-//        return 2
-//    }
+    override func numberOfSections(in tableView: UITableView) -> Int {
+       
+        return 2
+    }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection
+                            section: Int) -> Int {
       
         return 20
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let personCell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath:
+                            IndexPath) -> UITableViewCell {
+        let personCell = tableView.dequeueReusableCell(withIdentifier: "personCell",
+                                                       for: indexPath)
         
         return personCell
     }
   
-    
     // MARK: - Navigation
 
   
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//      
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      
+    }
 }
