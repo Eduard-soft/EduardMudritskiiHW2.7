@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		2347A038273BAD9900E0E07E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347A037273BAD9900E0E07E /* AppDelegate.swift */; };
 		2347A03A273BAD9900E0E07E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347A039273BAD9900E0E07E /* SceneDelegate.swift */; };
-		2347A03C273BAD9900E0E07E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347A03B273BAD9900E0E07E /* ViewController.swift */; };
 		2347A03F273BAD9900E0E07E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2347A03D273BAD9900E0E07E /* Main.storyboard */; };
 		2347A041273BAD9D00E0E07E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2347A040273BAD9D00E0E07E /* Assets.xcassets */; };
 		2347A044273BAD9D00E0E07E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2347A042273BAD9D00E0E07E /* LaunchScreen.storyboard */; };
+		2347A051273BB0BA00E0E07E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347A050273BB0BA00E0E07E /* Model.swift */; };
+		2347A054273BB47A00E0E07E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347A053273BB47A00E0E07E /* DataManager.swift */; };
+		2347A05E273BFC7100E0E07E /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347A05D273BFC7100E0E07E /* PersonViewController.swift */; };
+		23722647273C16E600561D3D /* PersonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23722646273C16E600561D3D /* PersonListTableViewController.swift */; };
+		23722649273C178800561D3D /* FullPersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23722648273C178800561D3D /* FullPersonTableViewController.swift */; };
+		2372264B273C4B5500561D3D /* TapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372264A273C4B5500561D3D /* TapBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2347A034273BAD9900E0E07E /* EduardMudritskiiHW2.7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduardMudritskiiHW2.7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2347A037273BAD9900E0E07E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2347A039273BAD9900E0E07E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2347A03B273BAD9900E0E07E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2347A03E273BAD9900E0E07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2347A040273BAD9D00E0E07E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2347A043273BAD9D00E0E07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2347A045273BAD9D00E0E07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2347A050273BB0BA00E0E07E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2347A053273BB47A00E0E07E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		2347A05D273BFC7100E0E07E /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		23722646273C16E600561D3D /* PersonListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListTableViewController.swift; sourceTree = "<group>"; };
+		23722648273C178800561D3D /* FullPersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPersonTableViewController.swift; sourceTree = "<group>"; };
+		2372264A273C4B5500561D3D /* TapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		2347A036273BAD9900E0E07E /* EduardMudritskiiHW2.7 */ = {
 			isa = PBXGroup;
 			children = (
+				2347A04E273BAF1000E0E07E /* Storyboards */,
+				2347A04F273BAF8B00E0E07E /* Models */,
+				2347A04D273BAED000E0E07E /* ViewControllers */,
+				2347A052273BB36D00E0E07E /* Services */,
+				2347A04C273BAE6900E0E07E /* Resources */,
+				2347A04B273BAE3400E0E07E /* Configs */,
+			);
+			path = EduardMudritskiiHW2.7;
+			sourceTree = "<group>";
+		};
+		2347A04B273BAE3400E0E07E /* Configs */ = {
+			isa = PBXGroup;
+			children = (
 				2347A037273BAD9900E0E07E /* AppDelegate.swift */,
 				2347A039273BAD9900E0E07E /* SceneDelegate.swift */,
-				2347A03B273BAD9900E0E07E /* ViewController.swift */,
-				2347A03D273BAD9900E0E07E /* Main.storyboard */,
-				2347A040273BAD9D00E0E07E /* Assets.xcassets */,
 				2347A042273BAD9D00E0E07E /* LaunchScreen.storyboard */,
 				2347A045273BAD9D00E0E07E /* Info.plist */,
 			);
-			path = EduardMudritskiiHW2.7;
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		2347A04C273BAE6900E0E07E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2347A040273BAD9D00E0E07E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2347A04D273BAED000E0E07E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2372264A273C4B5500561D3D /* TapBarViewController.swift */,
+				23722646273C16E600561D3D /* PersonListTableViewController.swift */,
+				23722648273C178800561D3D /* FullPersonTableViewController.swift */,
+				2347A05D273BFC7100E0E07E /* PersonViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2347A04E273BAF1000E0E07E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2347A03D273BAD9900E0E07E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2347A04F273BAF8B00E0E07E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2347A050273BB0BA00E0E07E /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2347A052273BB36D00E0E07E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2347A053273BB47A00E0E07E /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2347A03C273BAD9900E0E07E /* ViewController.swift in Sources */,
+				2347A054273BB47A00E0E07E /* DataManager.swift in Sources */,
 				2347A038273BAD9900E0E07E /* AppDelegate.swift in Sources */,
+				23722647273C16E600561D3D /* PersonListTableViewController.swift in Sources */,
 				2347A03A273BAD9900E0E07E /* SceneDelegate.swift in Sources */,
+				2347A051273BB0BA00E0E07E /* Model.swift in Sources */,
+				2347A05E273BFC7100E0E07E /* PersonViewController.swift in Sources */,
+				23722649273C178800561D3D /* FullPersonTableViewController.swift in Sources */,
+				2372264B273C4B5500561D3D /* TapBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,10 +359,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P529959SPU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EduardMudritskiiHW2.7/Info.plist;
+				INFOPLIST_FILE = EduardMudritskiiHW2.7/Configs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +375,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,10 +388,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P529959SPU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EduardMudritskiiHW2.7/Info.plist;
+				INFOPLIST_FILE = EduardMudritskiiHW2.7/Configs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +404,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
